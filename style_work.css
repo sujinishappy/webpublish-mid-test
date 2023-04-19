@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+body{
+    background-color: rgb(246, 241, 235);
+    min-width: 1000px;
+    max-width: 1920px;
+    margin:0px auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #c6b5b5;
+}
+.logo {
+text-align: center;
+align-items: center;
+}
+.nav-left {
+text-align: right;
+}
+header span{
+    display: inline-block;
+}
+.logo img{
+    display: inline-block;
+    height: 40px;
+    width: auto;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+.title{
+    display: flex;
+    list-style: none;
+    text-align: left;
+}
+.title a{
+    color: rgb(117, 105, 105);
+    display: inline-block;
+    margin: 1rem;     
+    margin-left: 10px;     
+    margin-right: 10px;  
+    text-decoration: none;
+
+}
+.title a:hover{
+    text-decoration: underline;
+    color: #251a1a;
+}
+.sub-menu{
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    list-style: none;
+}
+.sub-menu a{
+    margin: 1px;
+    padding: 8px;
+    width: 140px;
+    background: #665353;
+    color: rgb(246, 241, 235);
+    border-radius: 4px;
+}
+.sub-menu :hover{
+    background-color: rgb(246, 241, 235);
+}
+.has-menu{
+    position: relative;
+}
+.has-menu > a::after{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    content: "∨";
+    margin-left: .5rem;
+}
+.has-menu .sub-menu{
+    display: none;
+}
+.has-menu:hover .sub-menu{
+    display: block;
+}
+.nav-left {
+    display: flex; /* flex로 지정 */
+    justify-content: flex-end; /* 오른쪽 정렬 */  
+    right: 0;
+    width: 345px;
+}
+.nav-left a{
+    text-align: right;
+    color: rgb(117, 105, 105);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;     
+    margin-right: 40px;  
+    text-decoration: none;
+}
+.nav-left :hover{
+    text-decoration: underline;
+    color: #251a1a;
+}
+
+
+
+
+.content_card{
+    width: 300px;
+    border-left: 3.5px solid #c6b5b5;
+    margin-bottom: 34px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    transition: background-color 0.3s ease-in-out;
+}
+.content_card:hover{
+    background-color: #665353;
+    color: #c6b5b5;
+
+}
+
+.card_img{
+    position: relative;
+    overflow: hidden;
+    transition: tranform 1.5s;
+}
+.card_img> img{
+    transition: tranform 1.5s;
+
+}
+.card_img:hover> img{
+    transform: translate(-0%,-8%);
+    scale: (1.5);
+}
+.card_img img{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.more{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.card_bottom{
+    padding: 00px;
+    padding-left: 30px;
+}
+.card_bottom h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 120px;
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+#content{
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: stretch;
+    align-items: start;
+    justify-content: space-around;
+    justify-content: center;
+}
+.more a{text-decoration: none;color:black;}
+.morea:link{color: black;}
+.morea:visited{color:black;}
+.long_line{
+    width: 250px;
+    border-bottom: solid 2px #c6b5b5;
+}
+
+
+footer{
+    background-color: #877272;
+    color:lightgray;
+    padding:20px;
+    margin: 0px;
+    height: 150px;
+}
+#footer_left>ul{
+    display: flex;
+    padding: 0px;
+}
+#footer_left>ul>li{
+    list-style: none;
+    padding: 0px 10px;
+    border-right: solid 1px lightgray;
+}
+#footer_left>ul>li:last-child{
+    border: none;
+}
+#footer_right{
+    margin-left: auto;
+}
+#footer_right>ul{
+    display: flex;
+}
+#footer_right>ul>li{
+    list-style: none;
+    padding: 0px 5px;
+}
+footer{
+    display: flex;
+}
